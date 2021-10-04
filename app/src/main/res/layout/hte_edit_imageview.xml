@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <!--照片插入至编辑器中，单张照片宽度会充满整个编辑器
+          单个图片最高200，最小高度100，宽度自适应，图片按高度宽度比例-->
+
+    <ImageView
+        android:id="@+id/edit_imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter" />
+
+    <ImageView
+        android:id="@+id/image_close"
+        android:layout_width="31dp"
+        android:layout_height="31dp"
+        android:layout_gravity="right|bottom"
+        android:layout_margin="12dp"
+        android:visibility="gone"
+        app:srcCompat="@android:drawable/btn_dialog" />
+
+    <ImageView
+        android:id="@+id/image_shrink"
+        android:layout_width="51dp"
+        android:layout_height="46dp"
+        android:layout_gravity="right|bottom"
+        android:layout_marginRight="45dp"
+        android:layout_marginBottom="6dp"
+        android:visibility="gone"
+        app:srcCompat="@android:drawable/btn_minus" />
+
+
+</FrameLayout>
+
